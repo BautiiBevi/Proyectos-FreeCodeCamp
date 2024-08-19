@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C# Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>C# Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Hello_World">Hello World</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Conditions_and_if">Conditions and if</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>The C# language is the most popular language for the .NET platform, a free, cross-platform, open source development environment. C# programs can run on many different devices, from Internet of Things (IoT) devices to the cloud and everywhere in between. You can write apps for phone, desktop, and laptop computers and servers.</p>
+        <p>C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET workloads. Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.</p>
+      </section>
+
+
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:</p>
+        <code>
+          // This line prints "Hello, World" 
+Console.WriteLine("Hello, World");
+        </code>
+        <p>The line starting with // is a single line comment. C# single line comments start with // and continue to the end of the current line. C# also supports multi-line comments. Multi-line comments start with /* and end with */. The WriteLine method of the Console class, which is in the System namespace, produces the output of the program. This class is provided by the standard class libraries, which, by default, are automatically referenced in every C# program.</p>
+        <p></p>
+      </section>
+
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Variables represent storage locations. Every variable has a type that determines what values can be stored in the variable. C# is a type-safe language, and the C# compiler guarantees that values stored in variables are always of the appropriate type. The value of a variable can be changed through assignment or through use of the ++ and -- operators.</p>
+        <p>In C#, there are different types of variables (defined with different keywords), for example:</p>
+        <ul>
+          <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+          <li>double - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+          <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+          <li>string - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+          <li>bool - stores values with two states: true or false</li>
+        </ul>
+        <p>To create a variable, you must specify the type and assign it a value:</p>
+        <code>
+          type variableName = value;
+        </code>
+      </section>
+
+
+      <section class="main-section" id="Conditions_and_if">
+        <header>Conditions and if</header>
+        <p>C# supports the usual logical conditions from mathematics:</p>
+        <ul>
+          <li>Less than: a < b</li>
+          <li>Less than or equal to: a <= b</li>
+          <li>Greater than: a > b</li>
+          <li>Greater than or equal to: a >= b</li>
+          <li>Equal to a == b</li>
+          <li>Not Equal to: a != b</li>
+        </ul>
+        <p>You can use these conditions to perform different actions for different decisions.</p>
+        <p>C# has the following conditional statements:</p>
+        <ul>
+          <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+          <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+          <li>Use else if to specify a new condition to test, if the first condition is false</li>
+          <li>Use switch to specify many alternative blocks of code to be executed</li>
+        </ul>
+        <code>
+          if (condition) 
+{
+  // block of code to be executed if the condition is True
+}
+        </code>
+        <code>
+          if (condition)
+{
+  // block of code to be executed if the condition is True
+} 
+else 
+{
+  // block of code to be executed if the condition is False
+}
+        </code>
+        <code>
+          if (condition1)
+{
+  // block of code to be executed if condition1 is True
+} 
+else if (condition2) 
+{
+  // block of code to be executed if the condition1 is false and condition2 is True
+} 
+else
+{
+  // block of code to be executed if the condition1 is false and condition2 is False
+}
+        </code>
+      </section>
+
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken from:</p>
+        <ul>
+          <li><u><a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" target="blank_">Microsoft C# Guide</a></u></li>
+          <li><u><a href="https://www.w3schools.com/cs/index.php" target="blank_">W3Schools C# Tutorial</a></u></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
